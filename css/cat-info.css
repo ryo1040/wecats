@@ -1,0 +1,201 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+/* layout */
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 20px;
+    background: #EFECE7;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.main-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    height: 100px; /* ヘッダーの高さを100pxに固定 */
+    width: 100%;
+    background: #000000;
+    color: #EFECE7;
+    padding: 0; /* パディングをリセット */
+    border-bottom: #000000 3px solid;
+    z-index: 1000;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+header h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    height: 50px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+nav li {
+    font-size: 1.2em;
+    margin-left: 30px;
+    align-items: center;
+}
+nav a {
+    color: #EFECE7; /* 通常のリンクの色 */
+    text-decoration: none;
+}
+nav a:visited {
+    color: #EFECE7; /* 訪問済みリンクの色 */
+}
+
+.cat-profile {
+    display: flex;
+    align-items: center;
+}
+.cat-photo {
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.cat-info {
+    flex: 1;
+}
+.cat-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.cat-info p {
+    margin: 5px 0 0;
+}
+
+/* bottom navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.bottom-nav a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom-nav img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+.bottom-nav span {
+    color: #000000;
+    font-size: 12px;
+}
+
+
+/* pc & tablet */
+@media screen and (min-width: 768px) {
+    html {
+        scroll-padding-top: 80px;
+        scroll-behavior: smooth;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        z-index: 1000;
+    }
+    .bottom-nav {
+        display: none;
+    }
+}
+
+/* smartphone */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    .main-container {
+        padding-top: 80px;
+        margin-bottom: 80px;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        height: 70px; /* ヘッダーの高さを100pxに固定 */
+        width: 100%;
+        background: #000000;
+        color: #EFECE7;
+        padding: 0; /* パディングをリセット */
+        border-bottom: #000000 3px solid;
+        z-index: 1000;
+    }
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2em;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 10px;
+        margin-bottom: 10px;    
+    }
+    nav {
+        display: none;
+    }
+    .container{
+        margin-bottom: 80px;
+    }
+    .content{
+        margin-top: 20px;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .cat-photo {
+        width: 150px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .cat-info h2 {
+        font-size: 1.2em;
+    }
+}
