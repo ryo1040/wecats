@@ -139,6 +139,10 @@ nav a:visited {
 .price-precaution h3 {
     text-align: left;
 }
+.price-precaution a {
+    color: #000000;
+    text-decoration: underline;
+}
 .pricelist {
     width: 60%;
     height: auto;
