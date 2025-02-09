@@ -107,19 +107,27 @@ nav a:visited {
     flex: 1;
 }
 .sns-links {
-    font-size: 1.2em;
+    width: 70%;
     color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+    margin: 0 auto;
 }
 
 .sns-links div {
     display: flex;
     align-items: center;
-    margin-left: 25px;
-    margin-right: 25px;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 45%;
+    margin-bottom: 5px;
+}
+.sns-links a {
+    color: #000000;
+    text-decoration: underline;
 }
 
 .ico_sns {
