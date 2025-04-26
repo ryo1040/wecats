@@ -177,6 +177,10 @@ table th,
 table td {
     padding: 1em 10px 1em 1em;
 }
+table a {
+    color: #000000;
+    text-decoration: underline;
+}
 tbody th {
       color: #000000;
 }
@@ -380,6 +384,16 @@ footer {
     }
     .title {
         font-size: 1.5em;
+    }
+
+    /* sns-links を2行で表示 */
+    .sns-links {
+        flex-wrap: wrap; /* 追加 */
+    }
+
+    .sns-links div {
+        width: 45%; /* 追加 */
+        margin-bottom: 10px; /* 追加 */
     }
 
     table {
